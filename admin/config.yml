@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/uploads
+public_folder: /uploads
+collections:
+  - name: settings
+    label: Website settings
+    files:
+      - name: site
+        label: Site content
+        file: content/site.json
+        fields:
+          - { label: Business name, name: businessName, widget: string }
+          - { label: Main headline, name: tagline, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Hero image, name: heroImage, widget: image }
+          - { label: Solar image, name: solarImage, widget: image }
+          - { label: Electrical image, name: electricImage, widget: image }
